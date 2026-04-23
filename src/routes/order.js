@@ -3,7 +3,7 @@ const { Order , OrderDetail , Customer } = require("./../../models");
 const { route } = require("./auth");
 const { Model } = require('sequelize');
 // From src/routes/order.js to Utils/generateOrderDoc.js
-const generateDoc = require('../Utils/generateOrderDoc');
+const generateDoc = require('../utils/generateOrderDoc');
 const router = express.Router();
 
 

@@ -9,7 +9,6 @@ const {
     buildPurchaseHash,
     buildCheckTransactionHash,
 } = require("../utils/payway");
-
 // Create payment
 router.post("/:orderId", async (req, res) => {
     console.log("FONTEND_URL", process.env.FRONTEND_URL)

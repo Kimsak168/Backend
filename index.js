@@ -47,7 +47,12 @@ app.use("/api/v1/products", productRoutes);
 app.use("/api/v1/payments", paymentRoutes);
 
 app.use(fileUpload());
-
+app.get("/v1/api/heatlth", (req, res) => {
+    res.json({
+        message: "API is healthy",
+        timestamp: new Date().toISOString()
+    });
+});
 app.get('/', (req, res) => {
     res.send('You get all notifications');
 });
